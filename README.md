@@ -71,6 +71,11 @@ none of your files. Full policy: **[kvrnl.io/privacy](https://kvrnl.io/privacy/)
 
 ## What's new
 
+**v1.1.21** — 2026-09-25
+  - Fixed the tray panel closing by itself - and sending an automatic error report - when you rested the pointer on one of its buttons. The button's tip took the keyboard focus as it appeared, and the panel read that as you clicking away.
+  - Notifications, tips and the full-screen exit bar no longer pull the keyboard away from what you're doing. A notice popping up while you typed - in a remote session or any other app - could swallow your next keystrokes, and in full screen, moving the pointer near the top edge took the typing away from the remote PC.
+  - The "someone is controlling your screen" bar no longer grabs the keyboard when it appears, so the first keys of the person you let in aren't lost, and a pinned tray panel no longer takes the focus when Mainframe starts.
+
 **v1.1.20** — 2026-09-25
   - The tray panel has been rebuilt. Your screens now show as a row of small cards with a live or down light, anything wrong listed first - click a live one to jump straight into it, or a down one to try it again on the spot.
   - A status badge at the top says at a glance whether anything needs you, like a screen being down, Remote Desktop needing a fix or an update waiting. If someone is controlling this PC, a red banner takes over the top with a Take back button, and a waiting update gets its own card with Install.
@@ -88,10 +93,6 @@ none of your files. Full policy: **[kvrnl.io/privacy](https://kvrnl.io/privacy/)
 
 **v1.1.17** — 2026-09-16
   - The Remote Desktop and Report a problem pages in Settings now fit the window without scrolling. Remote Desktop folds the password and port lines into the note under the sign-in details (and if this PC uses a non-standard port, it now shows up on the address itself, the way it has to be typed). Report a problem puts severity and email side by side. The Screens list, which grows with the PCs you add, is the only page that can still need to scroll.
-
-**v1.1.16** — 2026-09-16
-  - The Screen Share page has been redesigned to match the rest of the app: two clear cards - Share this PC and View another PC - with your share code shown large, Copy and New buttons right next to it, a live status (off / waiting / someone connected), and hover hints on everything. While watching someone's screen, the top bar now uses the app's own rounded buttons, monitor switches only appear when they have more than one, and Enter in the code box connects.
-  - Fixed the viewer sitting on Reconnecting... over a black screen forever after a wrong share code or a refused connection. It now says plainly that the other PC refused it and why, so you can fix the code and try again. Typing an address with a port (like 192.168.1.5:47921) is honoured too.
 
 Full history → **[kvrnl.io/changelog/mainframe](https://kvrnl.io/changelog/mainframe/)**
 
