@@ -71,6 +71,12 @@ none of your files. Full policy: **[kvrnl.io/privacy](https://kvrnl.io/privacy/)
 
 ## What's new
 
+**v1.1.20** — 2026-09-25
+  - The tray panel has been rebuilt. Your screens now show as a row of small cards with a live or down light, anything wrong listed first - click a live one to jump straight into it, or a down one to try it again on the spot.
+  - A status badge at the top says at a glance whether anything needs you, like a screen being down, Remote Desktop needing a fix or an update waiting. If someone is controlling this PC, a red banner takes over the top with a Take back button, and a waiting update gets its own card with Install.
+  - Remote Desktop and Live Share are now quick tiles. The Live Share tile is its own on/off switch and lights up while sharing is on, and both tiles have a copy button for this PC's address or your share code.
+  - The panel has smooth rounded corners on Windows 11, and the Mainframe name at the top no longer gets cut off.
+
 **v1.1.19** — 2026-09-25
   - The icon by the clock now opens a small control panel instead of a bare menu. At a glance it shows whether your screens are live, whether other PCs can reach this one over Remote Desktop, whether Live Share is on and whether anyone is watching or in control, and whether an update is waiting - with the fix, switch or install button right beside each one.
   - Left-click and right-click on the icon both open the same panel, and it keeps everything the old menu had: open Mainframe, Settings, Report a problem and Quit. Hovering over the icon also shows a one-line status, such as how many of your screens are live.
@@ -86,9 +92,6 @@ none of your files. Full policy: **[kvrnl.io/privacy](https://kvrnl.io/privacy/)
 **v1.1.16** — 2026-09-16
   - The Screen Share page has been redesigned to match the rest of the app: two clear cards - Share this PC and View another PC - with your share code shown large, Copy and New buttons right next to it, a live status (off / waiting / someone connected), and hover hints on everything. While watching someone's screen, the top bar now uses the app's own rounded buttons, monitor switches only appear when they have more than one, and Enter in the code box connects.
   - Fixed the viewer sitting on Reconnecting... over a black screen forever after a wrong share code or a refused connection. It now says plainly that the other PC refused it and why, so you can fix the code and try again. Typing an address with a port (like 192.168.1.5:47921) is honoured too.
-
-**v1.1.15** — 2026-09-16
-  - No more stock Windows scrollbar in Settings. When a page is taller than the window it now scrolls behind a slim dark bar that matches the app - mouse wheel anywhere on the page, drag the bar, or click above or below it to move a page at a time. The saved-connections picker in the Add / Edit screen dialog is now the dark dropdown as well, the last stock white list that was reachable from Settings.
 
 Full history → **[kvrnl.io/changelog/mainframe](https://kvrnl.io/changelog/mainframe/)**
 
