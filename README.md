@@ -71,6 +71,12 @@ none of your files. Full policy: **[kvrnl.io/privacy](https://kvrnl.io/privacy/)
 
 ## What's new
 
+**v1.1.19** — 2026-09-25
+  - The icon by the clock now opens a small control panel instead of a bare menu. At a glance it shows whether your screens are live, whether other PCs can reach this one over Remote Desktop, whether Live Share is on and whether anyone is watching or in control, and whether an update is waiting - with the fix, switch or install button right beside each one.
+  - Left-click and right-click on the icon both open the same panel, and it keeps everything the old menu had: open Mainframe, Settings, Report a problem and Quit. Hovering over the icon also shows a one-line status, such as how many of your screens are live.
+  - The panel can be pinned. Drag it by its top to anywhere on your screen, or click its pin, and it stays open right there and on top of other windows - even after Mainframe restarts or updates - until you unpin it or close it with its X.
+  - Opening Mainframe from the tray no longer shrinks a maximized window back to normal size.
+
 **v1.1.18** — 2026-09-16
   - Fixed the Remote Desktop repair failing after a Windows update on PCs where a security product holds files open. The repair found the right settings for the new Windows build and verified them, but the final step - writing them into place - was refused by Windows and the failure was swallowed, so the old settings stayed live and Remote Desktop stayed down while every check said the data was correct. The write now falls back to the method that has always worked on these machines, retries through a short lock, and if it still can't land it says so plainly instead of reporting the wrong reason.
 
@@ -83,9 +89,6 @@ none of your files. Full policy: **[kvrnl.io/privacy](https://kvrnl.io/privacy/)
 
 **v1.1.15** — 2026-09-16
   - No more stock Windows scrollbar in Settings. When a page is taller than the window it now scrolls behind a slim dark bar that matches the app - mouse wheel anywhere on the page, drag the bar, or click above or below it to move a page at a time. The saved-connections picker in the Add / Edit screen dialog is now the dark dropdown as well, the last stock white list that was reachable from Settings.
-
-**v1.1.14** — 2026-09-16
-  - The Settings cog is now on the very first screen, the moment the app launches. You no longer have to pick The Wall or Screen Share just to reach your screens list, the Remote Desktop repair, or the update check. Opening a screen, reconnecting one, or editing one from Settings on that first screen takes you straight to the wall.
 
 Full history → **[kvrnl.io/changelog/mainframe](https://kvrnl.io/changelog/mainframe/)**
 
