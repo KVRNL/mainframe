@@ -71,6 +71,11 @@ none of your files. Full policy: **[kvrnl.io/privacy](https://kvrnl.io/privacy/)
 
 ## What's new
 
+**v1.1.23** — 2026-09-26
+  - Mainframe now shares a few usage details with KVRNL - which features get used, any errors, its version, and basic facts about the PC such as its Windows version and screen size - so we can see what to fix and improve next. It never sends your screens, their names or addresses, or anything shown on them.
+  - You can switch usage details off any time in Settings, General, under Share usage details, and anything still waiting to be sent is deleted when you do. Checking your license keeps working either way.
+  - When Mainframe checks your license it now says whether it's just starting or has been running for a while, so a wall left up for days counts as one session instead of a fresh start every six hours.
+
 **v1.1.22** — 2026-09-25
   - Rebuilt the activation window for anyone who got Mainframe outside the KVRNL website. It explains that Mainframe is free and walks through getting a key step by step - create an account, get Mainframe from the store at no cost, and where your key shows up - with a button for each step and a Paste button for the key.
   - Every activation problem now says exactly what happened and what to do next - a key already active on another PC, a key for a different app, a typo, a suspended account - with a button that goes straight to the fix.
@@ -94,9 +99,6 @@ none of your files. Full policy: **[kvrnl.io/privacy](https://kvrnl.io/privacy/)
   - Left-click and right-click on the icon both open the same panel, and it keeps everything the old menu had: open Mainframe, Settings, Report a problem and Quit. Hovering over the icon also shows a one-line status, such as how many of your screens are live.
   - The panel can be pinned. Drag it by its top to anywhere on your screen, or click its pin, and it stays open right there and on top of other windows - even after Mainframe restarts or updates - until you unpin it or close it with its X.
   - Opening Mainframe from the tray no longer shrinks a maximized window back to normal size.
-
-**v1.1.18** — 2026-09-16
-  - Fixed the Remote Desktop repair failing after a Windows update on PCs where a security product holds files open. The repair found the right settings for the new Windows build and verified them, but the final step - writing them into place - was refused by Windows and the failure was swallowed, so the old settings stayed live and Remote Desktop stayed down while every check said the data was correct. The write now falls back to the method that has always worked on these machines, retries through a short lock, and if it still can't land it says so plainly instead of reporting the wrong reason.
 
 Full history → **[kvrnl.io/changelog/mainframe](https://kvrnl.io/changelog/mainframe/)**
 
