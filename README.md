@@ -71,6 +71,13 @@ none of your files. Full policy: **[kvrnl.io/privacy](https://kvrnl.io/privacy/)
 
 ## What's new
 
+**v1.1.22** — 2026-09-25
+  - Rebuilt the activation window for anyone who got Mainframe outside the KVRNL website. It explains that Mainframe is free and walks through getting a key step by step - create an account, get Mainframe from the store at no cost, and where your key shows up - with a button for each step and a Paste button for the key.
+  - Every activation problem now says exactly what happened and what to do next - a key already active on another PC, a key for a different app, a typo, a suspended account - with a button that goes straight to the fix.
+  - Fixed Mainframe asking to be activated again whenever the key server had a brief hiccup. Only a real answer about your key counts now; a server problem is treated like being offline, so your activation stays put.
+  - Your activation is now tied to this PC, and working offline stays allowed for up to 14 days after the last successful check. The first time Mainframe starts after this update, it checks your key online once.
+  - If checking your key takes a moment at startup, a small "Checking your license" window shows instead of nothing at all, and opening Mainframe a second time brings its window to the front. Setting up Remote Desktop now also needs Mainframe to be activated, and the automatic repair finds your key even when Windows asks for a different administrator account.
+
 **v1.1.21** — 2026-09-25
   - Fixed the tray panel closing by itself - and sending an automatic error report - when you rested the pointer on one of its buttons. The button's tip took the keyboard focus as it appeared, and the panel read that as you clicking away.
   - Notifications, tips and the full-screen exit bar no longer pull the keyboard away from what you're doing. A notice popping up while you typed - in a remote session or any other app - could swallow your next keystrokes, and in full screen, moving the pointer near the top edge took the typing away from the remote PC.
@@ -90,9 +97,6 @@ none of your files. Full policy: **[kvrnl.io/privacy](https://kvrnl.io/privacy/)
 
 **v1.1.18** — 2026-09-16
   - Fixed the Remote Desktop repair failing after a Windows update on PCs where a security product holds files open. The repair found the right settings for the new Windows build and verified them, but the final step - writing them into place - was refused by Windows and the failure was swallowed, so the old settings stayed live and Remote Desktop stayed down while every check said the data was correct. The write now falls back to the method that has always worked on these machines, retries through a short lock, and if it still can't land it says so plainly instead of reporting the wrong reason.
-
-**v1.1.17** — 2026-09-16
-  - The Remote Desktop and Report a problem pages in Settings now fit the window without scrolling. Remote Desktop folds the password and port lines into the note under the sign-in details (and if this PC uses a non-standard port, it now shows up on the address itself, the way it has to be typed). Report a problem puts severity and email side by side. The Screens list, which grows with the PCs you add, is the only page that can still need to scroll.
 
 Full history → **[kvrnl.io/changelog/mainframe](https://kvrnl.io/changelog/mainframe/)**
 
